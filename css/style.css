@@ -32,6 +32,7 @@ header{
 main{
   padding: 1rem;
   flex-grow:1;
+  min-height: 100vh;
 }
 
 footer {
@@ -99,15 +100,27 @@ h3 {
   margin: 20px;
 }
 
+.card1 {
+  background-color: gray;
+  max-width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: 20px;
+}
+
 .card div img {
+  max-width: 100%;
+}
+
+.card1 div img {
   max-width: 100%;
 }
 
 .gallery {
   border-top: 8px double rgb(0, 0, 0);
+  flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 1rem;
   align-items: center;
 }
@@ -123,3 +136,24 @@ h3 {
 .pagetwo {
   background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
 }
+
+
+.Noflex {
+  flex: none;
+}
+
+.btt {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(91, 101, 236);
+}
+
+.btt li i {
+  font-size: 50px;
+  color: red;
+  border: 2px solid red;
+}
+
+
+
+
