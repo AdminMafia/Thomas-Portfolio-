@@ -8,6 +8,17 @@ body{
   height:100vh;
 }
 
+.archivo {
+  font-family: archivo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aviano {
+  font-family: aviano, serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 h1, h2, h3, h4 {
   font-weight: bold;
@@ -21,7 +32,8 @@ h1 {
 
 h1 {
   font-weight: bold;
-  color: #EE852C;
+  color: #ff00fb;
+  /* color: #EE852C; */
 }
 
 header{
@@ -109,7 +121,7 @@ h3 {
   background-color: gray;
   max-width: 30%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  margin: 20px;
+  margin: 30px;
 }
 
 .card div img {
@@ -123,6 +135,7 @@ h3 {
 .gallery {
   border-top: 8px double rgb(0, 0, 0);
   flex-direction: row;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -173,9 +186,14 @@ h3 {
     flex-direction: column;
   }
 }
-
-
-
-
-
-
+/* screen fitting related to grid */
+@media screen and (max-width: 800px) {
+  .card{
+    flex-direction: column; 
+    max-width: fit-content;
+  }
+  .card1{
+    max-width: fit-content;
+  }
+}
+  
